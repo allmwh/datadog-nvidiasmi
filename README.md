@@ -38,7 +38,7 @@
 * 測試
 
   ```
-  datadog-agent check sensor
+  datadog-agent check nvidiasmi
   ```
 
   出現ok字樣即安裝成功，稍待幾分鐘即可於datadog平台得到資料
