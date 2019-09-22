@@ -2,6 +2,10 @@
 
 將nvidiasmi的GPU溫度、記憶體使用量、風扇轉速回報到datadog上
 
+## 原理
+
+使用python套件[plumbum](https://plumbum.readthedocs.io/en/latest/)與linux shell互動，讀取數據並交給datadog-agent，再回傳
+
 ## 需求
 
 此外掛透過[plumbum](https://plumbum.readthedocs.io/en/latest/)與linux shell互動，抓取溫度資料，所以需在datadog的python資料夾中安裝plumbum
@@ -64,3 +68,4 @@ temp即為目前GPU溫度
 
 
 nvidiasmi也可以傳其他參數，請看[說明文件](https://nvidia.custhelp.com/app/answers/detail/a_id/3751/~/useful-nvidia-smi-queries)，這樣的做法可以把很多東西傳到datadog，我也有做傳cpu溫度資料的[datadog-sensors](https://github.com/allmwh/datadog-sensors)，ups資料也有，之後慢慢放~~
+
