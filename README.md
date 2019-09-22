@@ -47,7 +47,7 @@
 
 
 
-![demo2](_v_images/demo2.png)
+![demo2](demo/demo2.png)
 
 
 
