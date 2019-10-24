@@ -19,8 +19,8 @@
 * 複製下列兩個檔案到datadog-agent目錄中
 
   ```
-  cp nvidiasmi.yaml /etc/dd-agent/conf.d/
-  cp nvidiasmi.py /etc/dd-agent/checks.d/
+  cp nvidiasmi.yaml /etc/datadog-agent/conf.d/
+  cp nvidiasmi.py /etc/datadog-agent/checks.d/
   ```
 
 * 更改兩個檔案的所有者為dd-agent
