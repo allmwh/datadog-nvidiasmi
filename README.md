@@ -8,7 +8,8 @@
 
 ## 需求
 
-此外掛透過[plumbum](https://plumbum.readthedocs.io/en/latest/)與linux shell互動，抓取溫度資料，所以需在datadog的python資料夾中安裝plumbum
+* 須事先安裝NVIDIA驅動程式，即`nvidia-smi`指令要可以運作
+* 透過[plumbum](https://plumbum.readthedocs.io/en/latest/)與linux shell互動，抓取溫度資料，所以需在datadog的python資料夾中安裝plumbum
 
 ```
 /opt/datadog-agent/embedded/bin/pip install plumbum
