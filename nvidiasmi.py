@@ -15,10 +15,7 @@ class sensor(AgentCheck):
     def check(self, instance):
         a=nvidia_smi["--query-gpu=timestamp,temperature.gpu,memory.used,memory.total,fan.speed,utilization.gpu","--format=csv"]
         a=a()
-        print(a)
         a=a.split(",")
-
-        print(a)
         
         temp=int(a[6])
         mem_used=a[7].split()
